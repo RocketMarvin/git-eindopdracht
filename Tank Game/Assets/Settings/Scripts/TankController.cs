@@ -18,7 +18,7 @@ public class TankController : MonoBehaviour
     public bool aanDeBeurt = false;
     public float Power = 10;
     public Text AllPower;
-    public Animator TankAnim;
+    public Animator TankAmin;
     BulletController bullet;
 
 
@@ -32,11 +32,11 @@ public class TankController : MonoBehaviour
 
             if (Input.GetAxis("Player1Movement") != 0)
             {
-                TankAnim.SetBool("TankAnim", true);
+                TankAmin.SetBool("TankAmin", true);
             }
             else
             {
-                TankAnim.SetBool("TankAnim", false);
+                TankAmin.SetBool("TankAmin", false);
             }
 
             if (Input.GetKeyDown(KeyCode.Space))
